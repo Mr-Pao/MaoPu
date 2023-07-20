@@ -1,0 +1,48 @@
+/**app.wxss**/
+page {
+  /* 定义一些颜色变量 */
+  --color-primary: #0C5F03;
+  --color-primary-dark: #0C5F03;
+  --color-primary-light: #D5F5E3;
+
+  --color-white-dark: #fafafa;
+
+  --color-gray-light: #f7f7fa;
+  --color-gray-normal:#eeeeee;
+  --color-gray: #dddddd;
+  --color-gray-dark: #bbbbbb;
+  --color-gray-max: #888;
+
+  --color-black-min:#555;
+  --color-black-light: #555;
+
+  --color-black-transparent: rgba(0,0,0,0.5);
+
+  --color-red: #dc3545;
+  --color-red-dark: #8b0000;
+
+  --color-green: #22ad6d;
+  --color-green-dark: #015e32;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
+
+/* 下面是没有授权的 */
+.unAuth {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.unAuth text {
+  margin: 600rpx 0 30rpx 0;
+  text-align: center;
+  font-size: 34rpx;
+}
+
+@import '/packages/weui/weui-wxss/dist/style/weui.wxss'
