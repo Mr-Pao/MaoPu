@@ -35,13 +35,12 @@ button {
   border-radius: 20rpx;
 }
 
-.submitButton,
+.submitButton, 
 .authButton {
   width: 100%;
   font-size: 30rpx;
   margin-top: 10rpx;
   margin-bottom: 10rpx;
-  color: var(--color-gray);
   background-color: var(--color-primary);
   border: 1rpx solid var(--color-gray-max);
   border-radius: 20rpx;
@@ -84,7 +83,7 @@ button {
 }
 
 .album-block {
-  width: 750rpx;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   background-color: var(--color-gray-light);

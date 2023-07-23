@@ -4,20 +4,20 @@ import {
   getDeltaHours,
   sleep,
   getCurrentPath
-} from "../../utils";
+} from "../../utils/utils";
 import {
   getAvatar,
   getVisitedDate
-} from "../../cat";
+} from "../../utils/cat";
 import {
   getCatCommentCount
-} from "../../comment";
-import { getUserInfo } from "../../user";
-import cache from "../../cache";
+} from "../../utils/comment";
+import { getUserInfo } from "../../utils/user";
+import cache from "../../utils/cache";
 import config from "../../config";
-import { loadFilter, getGlobalSettings, showTab } from "../../page";
-import { isManagerAsync, checkCanShowNews } from "../../user";
-import { cloud } from "../../cloudAccess";
+import { loadFilter, getGlobalSettings, showTab } from "../../utils/page";
+import { isManagerAsync, checkCanShowNews } from "../../utils/user";
+import { cloud } from "../../utils/cloudAccess";
 
 const default_png = undefined;
 
@@ -80,20 +80,21 @@ Page({
    */
   onLoad: async function (options) {
 
-    //获取tips
-    const db = await cloud.databaseAsync();
-    var tipsList = await db.collection('tips').get();
-    this.setData({
-      tipsList: shuffleArray(tipsList.data),
-    });
-    // Fisher-Yates 洗牌算法
-    function shuffleArray(array) {
-      for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]]; // 交换位置
-      }
-      return array;
-    }
+        //获取tips
+        const db = await cloud.databaseAsync();
+        var tipsList = await db.collection('tips').get();
+        this.setData({
+          tipsList: shuffleArray(tipsList.data),
+        });
+        // Fisher-Yates 洗牌算法
+        function shuffleArray(array) {
+          
+          for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]]; // 交换位置
+          }
+          return array;
+        }
 
     // 从缓存里读取options
     var fcampus = options.fcampus;
@@ -163,6 +164,14 @@ Page({
   loadFilters: async function (fcampus) {
     // 下面开始加载filters
     var res = await loadFilter();
+    if (!res) {
+      wx.showModal({
+        title: '出错了...',
+        content: '请到关于页，清理缓存后重启试试~',
+        showCancel: false,
+      });
+      return false;
+    }
     var filters = [];
     var area_item = {
       key: 'area',
@@ -191,7 +200,8 @@ Page({
       area_item.category.push(classifier[res.campuses[i]]);
     }
     // 把初始fcampus写入，例如"011000"
-    if (fcampus) {
+    if (fcampus && fcampus.length === area_item.category.length) {
+      console.log("fcampus exist", fcampus, area_item);
       for (let i = 0; i < fcampus.length; i++) {
         const active = fcampus[i] == "1";
         area_item.category[i].all_active = active;
@@ -240,7 +250,7 @@ Page({
     filters[0].active = true;
     console.log(filters);
     this.newUserTip();
-    await this.setData({
+    this.setData({
       filters: filters,
     });
     await this.reloadCats();
@@ -888,6 +898,7 @@ Page({
     var newsList = (await db.collection('news').orderBy('date', 'desc').where({
       setNewsModal: true
     }).get()).data
+
     this.setData({
       newsList: newsList,
     });

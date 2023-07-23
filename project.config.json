@@ -169,10 +169,11 @@
       ]
     }
   },
-  "libVersion": "2.24.7",
   "packOptions": {
     "ignore": [],
     "include": []
   },
-  "appid": "wx5d52c6c8f098ed5e"
+  "appid": "wx5d52c6c8f098ed5e",
+  "projectname": "zhongdamaopu",
+  "libVersion": "2.24.7"
 }

@@ -71,7 +71,7 @@ button.short {
   border-bottom: 2rpx var(--color-primary) solid;
   /* background-color: var(--color-white-dark); */
   padding: 10rpx;
-  color: var(--color-gray-max);
+  color: var(--color-black-light);
   display: flex;
   align-content: space-around;
   justify-content: center;
@@ -95,7 +95,6 @@ input.content {
 
 button.bottom {
   width: 100%;
-  color: var(--color-gray);
   background-color: var(--color-primary);
 }
 
@@ -112,4 +111,8 @@ button.bottom {
 
 .bottom-bar button.primary, .bottom-bar button.long {
   margin-top: 0;
+}
+
+form {
+  width: 100%;
 }

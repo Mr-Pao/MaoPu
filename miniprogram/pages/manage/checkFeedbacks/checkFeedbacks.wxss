@@ -12,7 +12,6 @@ button {
 }
 
 button.primary {
-  color: var(--color-gray);
   background-color: var(--color-primary);
   margin-top: 8rpx;
 }

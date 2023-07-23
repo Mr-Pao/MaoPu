@@ -38,7 +38,6 @@ button.long {
 }
 
 button.bottom {
-  color: var(--color-gray);
   width: 100%;
   background-color: var(--color-primary);
 }

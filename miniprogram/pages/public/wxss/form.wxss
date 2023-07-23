@@ -37,7 +37,6 @@ button.primary {
 button.long {
   margin: 20rpx 0 0 0;
   width: 100%;
-  color: var(--color-gray);
 }
 
 button.short {

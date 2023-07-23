@@ -105,10 +105,13 @@
 
       </view>
     </view>
+
+ <!-- 广告 -->
     <!-- <view wx:if="{{adStep && (index+1)%adStep===0}}" class="card-ad {{ad_show['ad-'+(index+1)]? '': 'hidden'}}">
       <ad unit-id="{{ad.banner}}" ad-intervals="120"
       bindload="adLoad" binderror="adError" bindclose="adClose" data-ad_id='ad-{{(index+1)}}'></ad>
     </view> -->
+
     <view wx:if="{{adStep && (index+1)%adStep===0 && tipsList[(index+1)/adStep-1].tip.length>0}}">
       <text  class="tips">{{tipsList[(index+1)/adStep-1].tip}}</text>
     </view>

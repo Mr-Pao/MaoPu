@@ -17,7 +17,6 @@
 .block .title {
   font-size: 28rpx;
   font-weight: 500;
-  color: var(--color-gray);
   background-color: var(--color-primary);
   display: inline-block;
   padding: 10rpx;
@@ -29,8 +28,8 @@
 
 .block .desc {
   width: 100%;
-  font-size: 30rpx;
-  color: var(--color-black-min);
+  font-size: 26rpx;
+  color: var(--color-black-light);
   line-height: 50rpx;
   margin-bottom: 10rpx;
 }
@@ -56,7 +55,6 @@ button {
 }
 
 button.primary {
-  color: var(--color-gray);
   background-color: var(--color-primary);
 }
 

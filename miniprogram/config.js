@@ -5,7 +5,7 @@
 
 module.exports = {
   // 版本号
-  app_version: "v2.0",
+  app_version: "v2.1",
   // laf后台服务地址
   laf_url: 'https://hy87gr.laf.run',
   // laf后台服务地址（微信开发工具中），一般和上面laf_url一致就好
@@ -29,12 +29,10 @@ module.exports = {
   // 小程序菊花码图片
   mpcode_img: "https://hy87gr-cat.oss.laf.run/菊花码.jpg",
 
-  // 首页banner广告
-  ad_genealogy_banner: "adunit-9a7dcb84fe2c4db1",
-  // 识猫banner广告
-  ad_recognize_banner: "adunit-1b69cda0d1b8c703",
-  // 投喂video广告
-  ad_reward_video: "adunit-eac4513e7b770f93",
+  // 徽章排行榜的数量榜logo
+  badge_rank_count_img: "https://hy87gr-cat.oss.laf.run/badge_rank_count.png",
+  // 徽章排行榜的价值榜logo
+  badge_rank_score_img: "https://hy87gr-cat.oss.laf.run/badge_rank_score.png",
 
   // 猫猫领养状态字符串，对应数据库cat.adopt中的数字下标
   cat_status_adopt: ["未领养", "已领养", "寻找领养中"],
@@ -79,7 +77,7 @@ module.exports = {
       label_character: "性格及特点",
       label_tutorial: "撸猫指南",
       label_tutorial_empty: "暂时还没有",
-      label_comment_board: "留言板",
+      label_comment_board: "便利贴墙",
       sterilized_true: "已绝育",
       sterilized_false: "待绝育",
     },
@@ -96,8 +94,8 @@ module.exports = {
     // 提交留言页，pages/genealogy/commentBoard/commentBoard
     comment_board: {
       ban_tip: "如有误封请在\"关于-信息反馈\"中留言~",
-      auth_tip: "设置头像昵称后留言~",
-      comment_tip: "给猫咪留个言吧~"
+      auth_tip: "请先设置头像昵称~",
+      comment_tip: "给猫咪留张便利贴吧~"
     },
     // 添加照片，pages/genealogy/addPhoto/addPhoto
     add_photo: {
@@ -114,8 +112,8 @@ module.exports = {
       ad_success_tip: "多谢喵(ฅ'ω'ฅ)!",
       ad_fail_tip: "没播完喵...",
       reward_tip_title: "投喂罐头",
-      reward_tip: "您的投喂及广告收入将用作猫猫救助，每月的收支都会在“笃行志愿服务队”公众号进行公开，感谢您对中大流浪猫的帮助与支持！\n喵(^･ｪ･^)",
-      reward_count_tip: "* 每月统计一次，在公众号公示，多谢晒（鞠躬）",
+      reward_tip: "您的投喂及广告收入将用作猫猫救助，每月的收支都会在小程序进行公开，感谢您对火大流浪猫的帮助与支持！\n喵(^･ｪ･^)",
+      reward_count_tip: "* 每月统计一次，在小程序公示，多谢晒（鞠躬）",
       reward_title: "爱心捐款",
     },
     // 排行页，pages/info/photoRank/photoRank
@@ -160,7 +158,7 @@ module.exports = {
     },
     // 精选，pages/leaderboard/leaderboard
     leaderboard: {
-      share_tip: "精选照片",
+      share_tip: "榜单",
     },
     // 精选，pages/inviteUser/inviteUser
     inviteUser: {

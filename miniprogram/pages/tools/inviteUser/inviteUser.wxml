@@ -10,5 +10,5 @@
 
 <block wx:if="{{isManager}}">
   <view class="tip">{{text_cfg.inviteUser.manager_tip}}</view>
-  <button class="primary" open-type="share" style="color: white;">发送邀请</button>
+  <button class="primary" open-type="share">发送邀请</button>
 </block>

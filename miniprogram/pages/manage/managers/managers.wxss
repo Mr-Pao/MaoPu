@@ -127,7 +127,6 @@ picker.manager-level {
 }
 
 button.manager-update {
-  color: var(--color-gray);
   width: 200rpx;
   font-size: 32rpx;
   margin-left: 20rpx;

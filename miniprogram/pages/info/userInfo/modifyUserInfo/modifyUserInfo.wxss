@@ -19,7 +19,6 @@ page {
 
 button.primary {
   margin-top: 10rpx;
-  color: var(--color-gray);
   background-color: var(--color-primary);
   width: 300rpx;
 }
@@ -46,6 +45,5 @@ picker, input {
 }
 
 .nickname-input {
-  color: var(--color-gray-min);
   width: 400rpx;
 }

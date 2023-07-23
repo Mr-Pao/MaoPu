@@ -31,8 +31,8 @@
         <view wx:if='{{news.ddateLastModify}}' class='news editTime'>修改于：{{news.ddateLastModify}} </view>
 
         <view wx:if="{{showManager}}">
-            <button style="color: var(--color-gray);" bindtap='removeNews'>删除</button>
-            <button style="color: var(--color-gray);" bindtap='modifyNews'>修改</button>
+            <button bindtap='removeNews'>删除</button>
+            <button bindtap='modifyNews'>修改</button>
         </view>
     </view>
     <view class='verify-box' wx:if='{{err}}'>

@@ -1,3 +1,31 @@
+- collectionName: badge
+  rules:
+    read: openid
+    count: openid
+    update: false
+    remove: false
+    add: false
+- collectionName: badge_code
+  rules:
+    read: false
+    count: false
+    update: false
+    remove: false
+    add: false
+- collectionName: badge_def
+  rules:
+    read: openid
+    count: openid
+    update: false
+    remove: false
+    add: false
+- collectionName: badge_rank
+  rules:
+    read: openid
+    count: openid
+    update: false
+    remove: false
+    add: false
 - collectionName: cat
   rules:
     read: openid
@@ -69,13 +97,6 @@
     remove: false
     add: false
 - collectionName: user
-  rules:
-    read: openid
-    count: openid
-    update: false
-    remove: false
-    add: false
-- collectionName: tips
   rules:
     read: openid
     count: openid

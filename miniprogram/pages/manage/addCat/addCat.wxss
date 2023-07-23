@@ -14,7 +14,7 @@ page {
   border-bottom: 2rpx var(--color-primary) solid;
   background-color: var(--color-white-dark);
   padding: 15rpx;
-  color: var(--color-black-min);
+  color: var(--color-black-light);
 }
 
 

@@ -23,9 +23,9 @@
   </view>
 </view>
 
-<!-- <view class='block'>
+<view class='block'>
   <view class='title'>{{text_cfg.feedback.contract_tip_title}}</view>
   <view class='desc'>
     <text>{{text_cfg.feedback.contract_tip}}</text>
   </view>
-</view> -->
+</view>
