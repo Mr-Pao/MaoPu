@@ -9,12 +9,16 @@
 
 <view class='buttons'>
   <image class='button' bindtap='clickbtn' data-to='/pages/info/badge/badge' src='/pages/public/images/info/btn/badge.png'></image>
+  <image class='button' bindtap='clickbtn' data-to='/pages/info/reward/reward' src='/pages/public/images/info/btn/dashang.png'></image>
   <image class='button' bindtap='toNewCat' data-to='/pages/info/feedback/feedback' src='/pages/public/images/info/btn/xinmao.png'></image>
   <image class='button' bindtap='clickbtn' data-to='/pages/info/userInfo/modifyUserInfo/modifyUserInfo' src='/pages/public/images/info/btn/geren.png'></image>
+  
+  <image class='button' bindtap='clickbtn' data-to='/pages/info/devTeam/devTeam' src='/pages/public/images/info/btn/tuandui.png'></image>
   <button open-type="contact" plain='true' style="padding-right: 0rpx;border: none;"><image class='button' src='/pages/public/images/info/btn/fankui.png'></image></button>
+  
 </view>
 
-<view class='block-name'>其他作品</view>
+<view class='block-name'>友情链接</view>
 
 <!-- <scroll-view class="scroll-friend-link-box" scroll-x="true" enable-flex='true' enhanced="true" show-scrollbar='false'></scroll-view> -->
 <view class="friend-link-box">

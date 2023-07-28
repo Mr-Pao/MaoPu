@@ -207,7 +207,7 @@ Page({
     this.getHeights();
   },
   onReachBottom: function () {
-    if (this.data.activateThread != 1) {
+    if (this.data.threadsActive != 1) {
       return;
     }
     this.loadData()

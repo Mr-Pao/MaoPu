@@ -6,10 +6,10 @@
     <view class="buttons">
       <view class="btn {{freeBadgeLoaded ? '' : 'disabled'}}" hover-class="active" bindtap='tapForGetBadge' data-reason='checkIn' data-count="1">
         <image class="logo" src="/pages/public/images/badge/article_btn.png" mode="aspectFit" />
-        <view>每日免费<view class="btn-tip">{{freeBadgeLoaded? '立即可取': nextFreeBadgesHours + 'h' + nextFreeBadgesMins + 'm 后'}}</view>
+        <view>每日可抽取一次<view class="btn-tip">{{freeBadgeLoaded? '立即可取': nextFreeBadgesHours + 'h' + nextFreeBadgesMins + 'm 后'}}</view>
         </view>
       </view>
-      <view class="btn {{(pictureAdLoaded && todayPicCount < todayPicLimit) ? '' : 'disabled'}}" hover-class="active" bindtap='watchADForGetBadge' data-type='picture'>
+      <!-- <view class="btn {{(pictureAdLoaded && todayPicCount < todayPicLimit) ? '' : 'disabled'}}" hover-class="active" bindtap='watchADForGetBadge' data-type='picture'>
         <image class="logo" src="/pages/public/images/badge/article_btn.png" mode="aspectFit" />
         <view>
           抽取1次
@@ -17,17 +17,17 @@
           <view wx:elif="{{todayPicCount >= todayPicLimit}}" class="btn-tip">今日上限 ({{todayPicCount}}/{{todayPicLimit}})</view>
           <view wx:else class="btn-tip">暂无广告~</view>
         </view>
-      </view>
-      <view class="btn {{(videoAdLoaded && todayVideoCount < todayVideoLimit) ? '' : 'disabled'}}" hover-class="active" bindtap='watchADForGetBadge' data-type='video'>
+      </view> -->
+      <!-- <view class="btn {{(videoAdLoaded && todayVideoCount < todayVideoLimit) ? '' : 'disabled'}}" hover-class="active" bindtap='watchADForGetBadge' data-type='video'>
         <image class="logo" src="/pages/public/images/badge/play_btn.png" mode="aspectFit" />
-
         <view>
           抽取2次
           <view wx:if="{{todayVideoCount < todayVideoLimit && videoAdLoaded}}" class="btn-tip">视频广告 ({{todayVideoCount}}/{{todayVideoLimit}})</view>
           <view wx:elif="{{todayVideoCount >= todayVideoLimit}}" class="btn-tip">今日上限 ({{todayVideoCount}}/{{todayVideoLimit}})</view>
           <view wx:else class="btn-tip">暂无广告~</view>
         </view>
-      </view>
+      </view> -->
+
     </view>
   </view>
   <view class="down-part">

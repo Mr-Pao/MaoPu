@@ -5,7 +5,7 @@
 
 module.exports = {
   // 版本号
-  app_version: "v2.1",
+  app_version: "v2.1.1",
   // laf后台服务地址
   laf_url: 'https://hy87gr.laf.run',
   // laf后台服务地址（微信开发工具中），一般和上面laf_url一致就好
@@ -112,8 +112,9 @@ module.exports = {
       ad_success_tip: "多谢喵(ฅ'ω'ฅ)!",
       ad_fail_tip: "没播完喵...",
       reward_tip_title: "投喂罐头",
-      reward_tip: "您的投喂及广告收入将用作猫猫救助，每月的收支都会在小程序进行公开，感谢您对火大流浪猫的帮助与支持！\n喵(^･ｪ･^)",
-      reward_count_tip: "* 每月统计一次，在小程序公示，多谢晒（鞠躬）",
+      // reward_tip: "您的投喂及广告收入将用作猫猫救助，每月的收支都会在小程序进行公开，感谢您对火大流浪猫的帮助与支持！\n喵(^･ｪ･^)",
+      reward_tip: "暂时无需投喂！感谢您的帮助与支持！\n喵(^･ｪ･^)",
+      // reward_count_tip: "* 每月统计一次，在小程序公示，多谢晒（鞠躬）",
       reward_title: "爱心捐款",
     },
     // 排行页，pages/info/photoRank/photoRank
@@ -136,7 +137,7 @@ module.exports = {
     // 开发团队页，pages/info/devTeam/devTeam
     dev_team: {
       share_tip: "开发团队",
-      team: "程序开发：渔政、蓝卷、XD、zJ、ArcherJo、yw\n资料维护：Lo\n初期资料整理：hehe、玥琪、大米\n以及各校区猫群的小伙伴~\n非常欢迎新朋友加入设计开发哇~！",
+      team: "非常欢迎新朋友加入设计开发哇~！",
     },
     // 识猫页，pages/recognize/recognize
     recognize: {

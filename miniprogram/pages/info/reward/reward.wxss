@@ -24,6 +24,7 @@
   position: absolute;
   top: -20rpx;
   left: -15rpx;
+  color: var(--color-white-dark);
 }
 
 .block .desc {
@@ -52,6 +53,7 @@ button {
   padding: 16rpx 30rpx;
   border: 1rpx solid var(--color-gray-max);
   border-radius: 25rpx;
+  color: var(--color-white-dark);
 }
 
 button.primary {

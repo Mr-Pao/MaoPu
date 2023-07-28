@@ -21,6 +21,7 @@ button.primary {
   margin-top: 10rpx;
   background-color: var(--color-primary);
   width: 300rpx;
+  color: var(--color-white-dark);
 }
 
 picker, input {
